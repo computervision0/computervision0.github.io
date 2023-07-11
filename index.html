@@ -176,19 +176,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="jumbotron">
     <h2>Examples of our work</h2>
 
-    <p>Bubble cavitation can ablate kidney stones, but wreaks havoc on marine propellers.
-We developed a <a href="/papers/charalampopoulos-RSA-21.pdf" target="_blank">sub-grid method</a> for simulating this phenomenon.
-It uses a hybrid quadrature method of moments scheme to close the governing equations at low cost.
-<a href="https://mflowcode.github.io/" target="_blank">MFC</a>, our open-source multi-phase flow solver, demonstrates this method.
-MFC is also capable of fully-resolved multi-phase fluid dynamics via the diffuse-interface method.</p>
+    <p>BPavement distress evaluation is essential for routine pavement maintenance. This
+process entails determining the type of pavement distress and assessing its severity
+via manual or computer vision techniques. Recent efforts have shown a steady
+increase in the performance of deep machine learning models for automating
+pavement distress analysis. These models are, however, data hungry; requiring
+training on large, diverse annotations to enable it to perform the same tasks on data
+from different sources. Existing datasets annotated for deep learning models lack
+diversity in their data sources, which usually results in problems of model transferability
+and over-fitting. The current study seeks to establish a new dataset that can be used to
+benchmark and compare new machine learning models developed for detecting and
+analyzing pavement distress.</p>
 
     <div style="padding:2px;background:#fff;webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;width:60%;margin:0 auto;overflow:hidden;">
 <!-- 	    https://player.vimeo.com/video/455688517?autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;quality=360p&amp;background=1 -->
       <iframe src="/images/aboah/pavem.gif" frameborder="0" width="100%" allow="autoplay"></iframe>
     </div>
 
-    <p>The spectral boundary integral method leads to <a href="/papers/bryngelson-PRF-18.pdf" target="_blank">high-fidelity prediction and analysis</a> of blood cells transitioning to chaos in a microfluidic device (above).
-We developed a <a href="/papers/bryngelson-PRE-19.pdf" target="_blank">low-order model</a> for the cell-scale flow, important for guiding microfluidic device design and improving treatment outcomes.</p>
+    <p>The dataset was compiled using data from a variety of
+sources including Google Street View and pavement distress survey vans. To outline
+the distress boundary in the new dataset, polygons were used to annotate the images
+instead of bounding boxes. This enables the direct calculations of distress severity. A
+semi-automated annotation pipeline was developed to increase the size and variety of
+annotations. The study annotated over 13,000 distresses, categorizing them into seven
+distinct pavement types. Finally, six different deep U-Net based architectures were
+trained on the benchmark dataset to evaluate their performance. Based on validation
+intersection-over-union (IoU) score and predictive performance on test data, the
+resnest50 and resnet34 backbones were determined to be the most suitable U-Net
+backbones for distress detection using this dataset.</p>
   </div>
   <div class="jumbotron">
     <h2>News</h2>
