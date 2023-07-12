@@ -168,20 +168,21 @@ iframe {
 <p><strong>Note:</strong> This page is always a bit out of date. Our research interests can be gleaned via <a href="/papers" target="_blank">our papers</a> and the <a href="/" target="_blank">home page</a>.</p>
 
 <div class="jumbotron">
-  <h4>Quantum computing for partial differential equations</h4>
-  <p>Computational fluid dynamics simulations use the lion’s share of the world’s HPC resources.
-These simulations are based on PDEs and are thus expensive, both in node hours and dollars.
-They are also inefficient: A staggering quantity of the marshaled computational resources are required to represent the effects of microscopically small features that accumulate to have macroscopic effects.</p>
+  <h4>Traffic Anomaly Detection</h4>
+  <p align="justify">In this project, we developed a framework for detecting traffic anomalies in video data. The proposed methodology relies on an augmented annotation pipeline that pre-annotates the training
+dataset using an object detection model trained on the COCO dataset. Annotations are subsequently used to build a vehicle detection model using the YOLOv5 network. Next, we estimate the background of each traffic video by computing the median
+of frames randomly sampled from a uniform distribution over a thirty-second period. Vehicle detections on extracted backgrounds are classified as anomaly candidates. Factors such as vehicle detection size, likelihood, and road feature masks were
+used to construct a decision tree to eliminate false anomalies. The start and end of an anomaly were computed by superimposing detections from anomaly candidates and their foreground detections. The main contributions are as follows</p>
   <div class="row align-items-end">
     <div class="col-md-9 col-sm-12">
       <ul>
-        <li>Our group <a href="/papers/chrit-arxiv-23.pdf" target="_blank">develops quantum algorithms</a> for the PDEs that govern fluid flows and other phenomena to gain asymptotic speedups</li>
-        <li>We develop quantum lattice-based algorithms like quantum lattice Boltzmann and lattice gas</li>
-        <li>Quantum <em>simulation</em> is used to scale our algorithms to large HPC resources for analysis</li>
+        <li> Developed a fast and efficient data annotation pipeline</li>
+        <li> Developed decision-tree based method for anomaly detection</li>
+        <li> Developed a real-time model for traffic anomaly detections</li>
       </ul>
     </div>
     <div class="col-md-3 col-sm-12" style="background-color:transparent">
-      <p><img width="100%" src="/images/respic/qlbm.png" /></p>
+      <p><img width="100%" src="/images/aboah/anomaly.jpg" /></p>
     </div>
   </div>
 </div>
