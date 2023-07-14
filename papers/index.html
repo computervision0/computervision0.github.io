@@ -678,7 +678,7 @@ ol li{
 
 <div class="col-sm-10 col-xs-10">
 <div class="row">
-<span id="proceeding_14"><<b><u>Armstrong Aboah</u></b>, Yaw Adu-Gyamfi. (2020). Smartphone-based pavement roughness estimation using deep learning with entity embedding. <i>Advances in Data Science and Adaptive Analysis 12 (03n04), 2050007</i>.</span></div>
+<span id="proceeding_14"><b><u>Armstrong Aboah</u></b>, Yaw Adu-Gyamfi. (2020). Smartphone-based pavement roughness estimation using deep learning with entity embedding. <i>Advances in Data Science and Adaptive Analysis 12 (03n04), 2050007</i>.</span></div>
 
 
 
@@ -1049,8 +1049,9 @@ ol li{
 <div class="col-sm-2 col-xs-2 d-none d-md-block" style="margin:0; padding:0; margin-top:3px;">
 <!-- <div class="col-sm-2 col-xs-2"> -->
 
-<center><button class="btn btn-primary btm-sm Disabled" style="width:100%;border-radius:12px;">ARTICLE</button></center>&nbsp;&nbsp;
-    
+<!-- <center><button class="btn btn-primary btm-sm Disabled" style="width:100%;border-radius:12px;">ARTICLE</button></center>&nbsp;&nbsp; -->
+<center><img src=/images/aboah/delay.jpg style="width:100%;border-radius:12px;"</></center>    
+
 
 
 
@@ -1059,17 +1060,17 @@ ol li{
 
 <div class="col-sm-10 col-xs-10">
 <div class="row">
-<span id="charalampopoulos21">Charalampopoulos, A., Bryngelson, S. H., Colonius, T., &amp; Sapsis, T. P. (2022). Hybrid quadrature moment method for accurate and stable representation of non-Gaussian processes and their dynamics. <i>Philosophical Transactions of the Royal Society A</i>, <i>380</i>(2229).</span></div>
+<span id="charalampopoulos21">Maged Shoman, <b><u>Armstrong Aboah</u></b>, Yaw Adu-Gyamfi (2020). Deep learning framework for predicting bus delays on multiple routes using heterogenous datasets. <i>Journal of Big Data Analytics in Transportation 2, 275-290</i></span></div>
 
 
 
 
 
-<a href="/papers/charalampopoulos-RSA-21.pdf" target="_blank"><button class="btn btn-info btm-sm">PDF</button></a>
+<a href="https://link.springer.com/article/10.1007/s42421-020-00031-y" target="_blank"><button class="btn btn-info btm-sm">ARTICLE</button></a>
 
 
 
-<a href="http://doi.org/10.1098/rsta.2021.0209" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
+<a href="https://www.researchgate.net/profile/Armstrong-Aboah/publication/348230467_Deep_Learning_Framework_for_Predicting_Bus_Delays_on_Multiple_Routes_Using_Heterogenous_Datasets/links/5ff4dd60299bf1408874dbd8/Deep-Learning-Framework-for-Predicting-Bus-Delays-on-Multiple-Routes-Using-Heterogenous-Datasets.pdf?_sg%5B0%5D=started_experiment_milestone&_sg%5B1%5D=started_experiment_milestone&origin=journalDetail&_rtd=e30%3D" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
 
 
 
@@ -1086,22 +1087,21 @@ ol li{
 
 
 <div id="acharalampopoulos21" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{charalampopoulos21,
-  author = {Charalampopoulos, A. and Bryngelson, S. H. and Colonius, T. and Sapsis, T. P.},
-  title = {Hybrid quadrature moment method for accurate and stable representation of non-{G}aussian processes and their dynamics},
-  file = {charalampopoulos-RSA-21.pdf},
-  journal = {Philosophical Transactions of the Royal Society A},
-  year = {2022},
-  volume = {380},
-  number = {2229},
-  doi = {10.1098/rsta.2021.0209}
+<pre>@article{shoman2020deep,
+  title={Deep learning framework for predicting bus delays on multiple routes using heterogenous datasets},
+  author={Shoman, Maged and Aboah, Armstrong and Adu-Gyamfi, Yaw},
+  journal={Journal of Big Data Analytics in Transportation},
+  volume={2},
+  pages={275--290},
+  year={2020},
+  publisher={Springer}
 }
 </pre>
 </div>
 
 
 <div id="bcharalampopoulos21" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>Solving the population balance equation (PBE) for the dynamics of a dispersed phase coupled to a continuous fluid is expensive. Still, one can reduce the cost by representing the evolving particle density function in terms of its moments. In particular, quadrature-based moment methods (QBMMs) invert these moments with a quadrature rule, approximating the required statistics. QBMMs have been shown to accurately model sprays and soot with a relatively compact set of moments. However, significantly non-Gaussian processes such as bubble dynamics lead to numerical instabilities when extending their moment sets accordingly. We solve this problem by training a recurrent neural network (RNN) that adjusts the QBMM quadrature to evaluate unclosed moments with higher accuracy. The proposed method is tested on a simple model of bubbles oscillating in response to a temporally fluctuating pressure field. The approach decreases model-form error by a factor of 10 when compared to traditional QBMMs. It is both numerically stable and computationally efficient since it does not expand the baseline moment set. Additional quadrature points are also assessed, optimally placed and weighted according to an additional RNN. These points further decrease the error at low cost since the moment set is again unchanged.</pre>
+<pre>Accurate prediction of bus delays improves transit service delivery and can potentially increase passenger use and satisfaction. To date, models developed for predicting bus delays have been restricted to single routes because of their poor performance on a wide network, due to reliance on simplistic model architectures and limited sources of data. This paper proposes a deep learning-based framework for predicting bus delays at the network level. The framework is fueled by large, heterogenous bus transit data (GTFS) and vehicle probe data. We utilize entity embeddings to enable the framework to simultaneously fit functions and learn patterns from both categorical and continuous data streams. The framework results in a single model that is able to characterize the factors influencing delays on multiple routes, for multiple stations at a time, at different times of the day, and during different seasons. A case study was conducted in Saint Louis, Missouri, with data collected over a 1-month period. The results indicate that the developed modeling framework is high performing, predicting delays for multiple stops at a mean absolute percentage error (MAPE) of about 6%. For different routes and trips, the observed prediction errors were stable across days of week, bus stops, holidays, and time of day. Although peak hour factors and the distance to bus stop influenced the model’s prediction errors for some routes, the observed differences were not significant. Compared to previous research, the ability to simultaneously model continuous and categorical data with deep learning and the use of heterogenous data contributed to such high performance on multiple routes.</pre>
 </div>
 </div>
 
@@ -1406,8 +1406,9 @@ ol li{
 <div class="col-sm-2 col-xs-2 d-none d-md-block" style="margin:0; padding:0; margin-top:3px;">
 <!-- <div class="col-sm-2 col-xs-2"> -->
 
-<center><button class="btn btn-primary btm-sm Disabled" style="width:100%;border-radius:12px;">ARTICLE</button></center>&nbsp;&nbsp;
-    
+<!-- <center><button class="btn btn-primary btm-sm Disabled" style="width:100%;border-radius:12px;">ARTICLE</button></center>&nbsp;&nbsp; -->
+<center><img src=/images/aboah/pav1.jpg style="width:100%;border-radius:12px;"</></center>    
+
 
 
 
@@ -1416,17 +1417,17 @@ ol li{
 
 <div class="col-sm-10 col-xs-10">
 <div class="row">
-<span id="spratt21">Spratt, J.-S., Rodriguez, M., Schmidmayer, K., Bryngelson, S. H., Yang, J., Franck, C., &amp; Colonius, T. (2021). Characterizing viscoelastic materials via ensemble-based data assimilation of bubble collapse observations. <i>Journal of the Mechanics and Physics of Solids</i>, <i>152</i>, 104455.</span></div>
+<span id="spratt21">Ashkan Behzadian, Tanner Wambui Muturi, Amanda Mullins, <b><u>Armstrong Aboah</u></b>, Yaw Adu-Gyamfi et al. (2022). The 1st data science for pavements challenge. <i>arXiv preprint arXiv:2206.04874</i></span></div>
 
 
 
 
 
-<a href="/papers/spratt-JMPS-21.pdf" target="_blank"><button class="btn btn-info btm-sm">PDF</button></a>
+<!-- <a href="/papers/spratt-JMPS-21.pdf" target="_blank"><button class="btn btn-info btm-sm">PDF</button></a> -->
 
 
 
-<a href="http://doi.org/10.1016/j.jmps.2021.104455" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
+<a href="https://arxiv.org/pdf/2206.04874.pdf" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
 
 
 
@@ -1443,22 +1444,18 @@ ol li{
 
 
 <div id="aspratt21" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{spratt21,
-  author = {Spratt, J.-S. and Rodriguez, M. and Schmidmayer, K. and Bryngelson, S. H. and Yang, J. and Franck, C. and Colonius, T.},
-  title = {Characterizing viscoelastic materials via ensemble-based data assimilation of bubble collapse observations},
-  journal = {Journal of the Mechanics and Physics of Solids},
-  file = {spratt-JMPS-21.pdf},
-  year = {2021},
-  volume = {152},
-  pages = {104455},
-  doi = {10.1016/j.jmps.2021.104455}
+<pre>@article{behzadian20221st,
+  title={The 1st data science for pavements challenge},
+  author={Behzadian, Ashkan and Muturi, Tanner Wambui and Zhang, Tianjie and Kim, Hongmin and Mullins, Amanda and Lu, Yang and Owor, Neema Jasika and Adu-Gyamfi, Yaw and Buttlar, William and Hamed, Majidifard and others},
+  journal={arXiv preprint arXiv:2206.04874},
+  year={2022}
 }
 </pre>
 </div>
 
 
 <div id="bspratt21" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>Bubble cavitation can induce such strain rates, and the resulting bubble dynamics are sensitive to the material properties. Thus, in principle, these properties can be inferred via measurements of the bubble dynamics. Estrada et al. (2018) demonstrated such bubble-dynamic high-strain-rate rheometry by using least-squares shooting to minimize the difference between simulated and experimental bubble radius histories. We generalize their technique to account for additional uncertainties in the model, initial conditions, and material properties needed to uniquely simulate the bubble dynamics. Ensemble-based data assimilation minimizes the computational expense associated with the bubble cavitation model. We test an ensemble Kalman filter (EnKF), an iterative ensemble Kalman smoother (IEnKS), and a hybrid ensemble-based 4D–Var method (En4D-Var) on synthetic data, assessing their estimations of the viscosity and shear modulus of a Kelvin-Voigt material. Results show that En4D–Var and IEnKS provide better moduli estimates than EnKF. Applying these methods to the experimental data of Estrada et al. (2018) yields similar material property estimates to those they obtained, but provides additional information about uncertainties. In particular, the En4D–Var yields lower viscosity estimates for some experiments, and the dynamic estimators reveal a potential mechanism that is unaccounted for in the model, whereby the viscosity is reduced in some cases due to material damage occurring at bubble collapse.</pre>
+<pre> The Data Science for Pavement Challenge (DSPC) seeks to accelerate the research and development of automated vision systems for pavement condition monitoring and evaluation by providing a platform with benchmarked datasets and codes for teams to innovate and develop machine learning algorithms that are practice-ready for use by industry. The first edition of the competition attracted 22 teams from 8 countries. Participants were required to automatically detect and classify different types of pavement distresses present in images captured from multiple sources, and under different conditions. The competition was data-centric: teams were tasked to increase the accuracy of a predefined model architecture by utilizing various data modification methods such as cleaning, labeling and augmentation. A real-time, online evaluation system was developed to rank teams based on the F1 score. Leaderboard results showed the promise and challenges of machine for advancing automation in pavement monitoring and evaluation. This paper summarizes the solutions from the top 5 teams. These teams proposed innovations in the areas of data cleaning, annotation, augmentation, and detection parameter tuning. The F1 score for the top-ranked team was approximately 0.9. The paper concludes with a review of different experiments that worked well for the current challenge and those that did not yield any significant improvement in model accuracy.</pre>
 </div>
 </div>
 
@@ -1518,8 +1515,9 @@ ol li{
 <div class="col-sm-2 col-xs-2 d-none d-md-block" style="margin:0; padding:0; margin-top:3px;">
 <!-- <div class="col-sm-2 col-xs-2"> -->
 
-<center><button class="btn btn-primary btm-sm Disabled" style="width:100%;border-radius:12px;">ARTICLE</button></center>&nbsp;&nbsp;
-    
+<!-- <center><button class="btn btn-primary btm-sm Disabled" style="width:100%;border-radius:12px;">ARTICLE</button></center>&nbsp;&nbsp; -->
+<center><img src=/images/aboah/virtex.jpg style="width:100%;border-radius:12px;"</></center>    
+
 
 
 
@@ -1528,17 +1526,17 @@ ol li{
 
 <div class="col-sm-10 col-xs-10">
 <div class="row">
-<span id="bryngelson19_CPC">Bryngelson, S. H., Schmidmayer, K., Coralic, V., Maeda, K., Meng, J., &amp; Colonius, T. (2021). MFC: An open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver. <i>Computer Physics Communications</i>, <i>266</i>, 107396.</span></div>
+<span id="bryngelson19_CPC"><b><u>Armstrong Aboah</u></b>, Michael Boeding, Yaw Adu-Gyamfi (2022). Mobile Sensing for Multipurpose Applications in Transportation. <i>Journal of big data analytics in transportation</i></span></div>
 
 
 
 
 
-<a href="/papers/bryngelson-CPC-20.pdf" target="_blank"><button class="btn btn-info btm-sm">PDF</button></a>
+<a href="https://link.springer.com/article/10.1007/s42421-022-00061-8" target="_blank"><button class="btn btn-info btm-sm">ARTICLE</button></a>
 
 
 
-<a href="http://doi.org/10.1016/j.cpc.2020.107396" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
+<a href="https://arxiv.org/pdf/2106.10733.pdf" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
 
 
 
@@ -1555,22 +1553,22 @@ ol li{
 
 
 <div id="abryngelson19_CPC" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@article{bryngelson19_CPC,
-  doi = {10.1016/j.cpc.2020.107396},
-  volume = {266},
-  year = {2021},
-  pages = {107396},
-  author = {Bryngelson, S. H. and Schmidmayer, K. and Coralic, V. and Maeda, K. and Meng, J. and Colonius, T.},
-  title = {{MFC: A}n open-source high-order multi-component, multi-phase, and multi-scale compressible flow solver},
-  journal = {Computer Physics Communications},
-  file = {bryngelson-CPC-20.pdf}
+<pre>@article{aboah2022mobile,
+  title={Mobile sensing for multipurpose applications in transportation},
+  author={Aboah, Armstrong and Boeding, Michael and Adu-Gyamfi, Yaw},
+  journal={Journal of big data analytics in transportation},
+  volume={4},
+  number={2-3},
+  pages={171--183},
+  year={2022},
+  publisher={Springer}
 }
 </pre>
 </div>
 
 
 <div id="bbryngelson19_CPC" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>MFC is an open-source tool for solving multi-component, multi-phase, and bubbly compressible flows. It is capable of efficiently solving a wide range of flows, including droplet atomization, shock-bubble interaction, and gas bubble cavitation. We present the 5- and 6-equation thermodynamically-consistent diffuse-interface models we use to handle such flows, which are coupled to high-order interface-capturing methods, HLL-type Riemann solvers, and TVD time-integration schemes that are capable of simulating unsteady flows with strong shocks. The numerical methods are implemented in a flexible, modular framework that is amenable to future development. The methods we employ are validated via comparisons to experimental results for shock-bubble, shock-droplet, and shock-water-cylinder interaction problems and verified to be free of spurious oscillations for material-interface advection and gas-liquid Riemann problems. For smooth solutions, such as the advection of an isentropic vortex, the methods are verified to be high-order accurate. Illustrative examples involving shock-bubble-vessel-wall and acoustic-bubble-net interactions are used to demonstrate the full capabilities of MFC.</pre>
+<pre>Routine and consistent data collection is required to address contemporary transportation issues. The cost of data collection increases significantly when sophisticated machines are used to collect data. Due to this constraint, State Departments of Transportation struggle to collect consistent data for analyzing and resolving transportation problems in a timely manner. Recent advancements in sensors integrated into smartphones have resulted in a more affordable method of data collection. The primary objective of this study is to develop and implement a smartphone-based application for transportation-related data collection. The app consists of three major modules: a frontend graphical user interface (GUI), a sensor module, and a backend module. While the frontend GUI enables interaction with the app, the sensor modules collect relevant data such as video, gyroscope, motion and accelerometer readings while the app is in use. The backend leverages a real-time database to stream and store data from sensors, together with providing the computational resources needed to support the application. In comparison to other developed apps for transportation data collection, this app is not overly reliant on the internet enabling the app to be used in internet-restricted areas. Additionally, the app is designed for multipurpose applications in transportation. The collected data were analyzed for a variety of purposes, including calculating the International Roughness Index (IRI), identifying pavement distresses, and understanding driver’s behaviors and environment. From the sensor data, we detected turning movements, lane changes and estimated IRI values. In addition, several pavement distresses were identified from the video data with machine learning.</pre>
 </div>
 </div>
 
