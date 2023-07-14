@@ -322,29 +322,29 @@ ol li{
 
 
 <!-- <center><button class="btn btn-warning btm-sm Disabled" style="width:100%;border-radius:12px;">PREPRINT</button></center> -->
-<center><img src=/images/aboah/arm1.jpg style="width:100%;border-radius:12px;"</></center>
+<center><img src=/images/aboah/driver.png style="width:100%;border-radius:12px;"</></center>
 
 </div>
 
 <div class="col-sm-10 col-xs-10">
 <div class="row">
-<span id="radhakrishnan23"><b>Radkhakrishnan, A.</b>, <b>Le Berre, H.</b>, <b>Wilfong, B.</b>, Spratt, J.-S., Rodriguez Jr., M., Colonius, T., &amp; Bryngelson, S. H. (2023). <i>Method for portable, scalable, and performant GPU-accelerated simulation of multiphase compressible flow</i>. arXiv: 2305.09163.</span></div>
+<span id="radhakrishnan23"><b><u>Armstrong Aboah</u></b>, Ulas Bagci,Abdul Rashid Mussah,Neema Jakisa Owor,Yaw Adu-Gyamfi (2023). <i>DeepSegmenter: Temporal Action Localization for Detecting Anomalies in Untrimmed Naturalistic Driving Videos</i>. arXiv: 2304.08261.</span></div>
 
 
 
 
 
-<a href="/papers/radhakrishnan-arxiv-23.pdf" target="_blank"><button class="btn btn-info btm-sm">PDF</button></a>
+<a href="https://openaccess.thecvf.com/content/CVPR2023W/AICity/papers/Aboah_DeepSegmenter_Temporal_Action_Localization_for_Detecting_Anomalies_in_Untrimmed_Naturalistic_CVPRW_2023_paper.pdf" target="_blank"><button class="btn btn-info btm-sm">CVF</button></a>
 
 
 
-<a href="http://doi.org/10.48550/arXiv.2305.09163" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
+<a href="https://arxiv.org/pdf/2304.08261.pdf" target="_blank"><button class="btn btn-info btm-sm">DOI</button></a>
 
 
 
 
 <!--  -->
-<!-- <a href="https://arxiv.org/abs/2305.09163" target="_blank"><button class="btn btn-info btm-sm">ARXIV</button></a> -->
+<!-- <a href="https://arxiv.org/pdf/2304.08261.pdf" target="_blank"><button class="btn btn-info btm-sm">ARXIV</button></a> -->
 <!--  -->
 
 
@@ -357,21 +357,19 @@ ol li{
 
 
 <div id="aradhakrishnan23" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>@unpublished{radhakrishnan23,
-  author = {Radhakrishnan, A. and {Le Berre}, H. and Wilfong, B. and Spratt, J.-S. and {Rodriguez Jr.}, M. and Colonius, T. and Bryngelson, S. H.},
-  title = {Method for portable, scalable, and performant {GPU}-accelerated simulation of multiphase compressible flow},
-  note = {arXiv: 2305.09163},
-  file = {radhakrishnan-arxiv-23.pdf},
-  arxiv = {2305.09163},
-  year = {2023},
-  doi = {10.48550/arXiv.2305.09163}
+<pre>@inproceedings{aboah2023deepsegmenter,
+  title={Deepsegmenter: Temporal action localization for detecting anomalies in untrimmed naturalistic driving videos},
+  author={Aboah, Armstrong and Bagci, Ulas and Mussah, Abdul Rashid and Owor, Neema Jakisa and Adu-Gyamfi, Yaw},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5358--5364},
+  year={2023}
 }
 </pre>
 </div>
 
 
 <div id="bradhakrishnan23" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-bottom:20px;">
-<pre>Multiphase compressible flows are often characterized by a broad range of space and time scales. Thus entailing large grids and small time steps, simulations of these flows on CPU-based clusters can thus take several wall-clock days. Offloading the compute kernels to GPUs appears attractive but is memory-bound for standard finite-volume and -difference methods, damping speed-ups. Even when realized, faster GPU-based kernels lead to more intrusive communication and I/O times. We present a portable strategy for GPU acceleration of multiphase compressible flow solvers that addresses these challenges and obtains large speedups at scale. We use OpenACC for portable offloading of all compute kernels while maintaining low-level control when needed. An established Fortran preprocessor and metaprogramming tool, Fypp, enables otherwise hidden compile-time optimizations. This strategy exposes compile-time optimizations and high memory reuse while retaining readable, maintainable, and compact code. Remote direct memory access, realized via CUDA-aware MPI, reduces communication times. We implement this approach in the open-source solver MFC. Metaprogramming-based preprocessing results in an 8-times speedup of the most expensive kernels, 46% of peak FLOPs on NVIDIA GPUs, and high arithmetic intensity (about 10 FLOPs/byte). In representative simulations, a single A100 GPU is 300-times faster than an Intel Xeon CPU core, corresponding to a 9-times speedup for a single A100 compared to the entire CPU die. At the same time, near-ideal (97%) weak scaling is observed for at least 13824 GPUs on Summit. A strong scaling efficiency of 84% is retained for an 8-times increase in GPU count. Collective I/O, implemented via MPI3, helps ensure negligible contribution of data transfers. Large many-GPU simulations of compressible (solid-)liquid-gas flows demonstrate the practical utility of this strategy.</pre>
+<pre>Identifying unusual driving behaviors exhibited by drivers during driving is essential for understanding driver behavior and the underlying causes of crashes. Previous studies have primarily approached this problem as a classification task, assuming that naturalistic driving videos come discretized. However, both activity segmentation and classification are required for this task due to the continuous nature of naturalistic driving videos. The current study therefore departs from conventional approaches and introduces a novel methodological framework, DeepSegmenter, that simultaneously performs activity segmentation and classification in a single framework. The proposed framework consists of four major modules namely Data Module, Activity Segmentation Module, Classification Module and Postprocessing Module. Our proposed method won 8th place in the 2023 AI City Challenge, Track 3, with an activity overlap score of 0.5426 on experimental validation data. The experimental results demonstrate the effectiveness, efficiency, and robustness of the proposed system.</pre>
 </div>
 </div>
 
